@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           font-family: sans-serif;
+        }
+        .container {
+            width: 450px;
+            margin: 20px auto;
+            padding: 1.4rem;
+            text-align: center;
+            background-color: #efefef;
+            min-height: 160px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: none;
+        }
+        input{
+            width: 80%;
+            height: 20px;
+            margin-top: .5em;
+            margin-bottom: 0;
+            padding: 0.4rem 0.6rem;
+            outline: none;
+        }
+        input:hover {
+            border-color: #ef4f5f;
+        }
+        input[type="submit"] {
+            width: 80%;
+            height: 40px;
+            font-size: 19px;
+            background-color: #ef4f5f;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        h1 {
+            text-align: center;
+        }
+        .box {
+            border: 1px solid;
+            width: 80%;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Grade Calculation</h1>
+    <div class="container">
+        <fieldset>
+            <lable for="mark">Enter Your Marks (100): <input id="mark" type="number" min="0" max="100" required></lable>
+        </fieldset>
+        <input type="submit" id="button" value="Submit">
+        <div class="box">
+            <p class="result">Wait..</p> 
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
+<script src="script.js"></script>
